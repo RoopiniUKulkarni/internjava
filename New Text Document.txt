@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color:#818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color:skyblue;
+}
+.main-content {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+
+.div.input[type=text]{
+ border:2px ;
+  border-radius:12px;
+  width:600%ss;
+s}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+
+<body>
+<div class="sidebar">
+  <a href="#cubes"><i class="fa fa-fw fa-cubes"></i></a><br>
+  <a href="#student"><i class="fa fa-fw fa-user"></i><br>Student</a>
+  <a href="#plan"><i class="fa fa-fw fa-archive"></i><br>LessonPlan</a>
+  <a href="#settings"><i class="fa fa-fw fa-cog"></i><br>Settings</a>
+</div>
+
+<div class="main-content">
+<button class="dropbtn">videos</button>
+<div class="dropdown-content"></div>
+<br>
+<div class="search">
+<form>
+<input type="text" name="search" placeholder="insert URL here"><br><br>
+<input type="fileupload" id="upload" value="upload">Or
+
+</from>
+</div>
+</div>
+</body>
+</html> 
+
